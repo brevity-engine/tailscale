@@ -218,6 +218,7 @@ func TestSendRecv(t *testing.T) {
 	wantActive(1, 0)
 	wantClosedPeers(1)
 
+	s.ExpVar()
 	t.Logf("passed")
 	s.Close()
 
